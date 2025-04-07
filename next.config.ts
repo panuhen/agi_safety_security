@@ -2,8 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: '/agi-safety-interactive',
-  assetPrefix: '/agi-safety-interactive/', // Add trailing slash
+  // Remove basePath and assetPrefix
   images: {
     unoptimized: true,
   },
