@@ -1,103 +1,100 @@
-import Image from "next/image";
+// src/app/page.tsx
+import Link from 'next/link';
+import { FiShield, FiAlertTriangle, FiTarget, FiLayers } from 'react-icons/fi';
+import ConceptCard from '@/components/ui/ConceptCard';
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="bg-white">
+      {/* Hero section */}
+      <div className="relative isolate overflow-hidden bg-gradient-to-b from-blue-100/20">
+        <div className="mx-auto max-w-7xl pb-24 pt-10 sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-40">
+          <div className="px-6 lg:px-0 lg:pt-4">
+            <div className="mx-auto max-w-2xl">
+              <div className="max-w-lg">
+                <h1 className="mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                  An Approach to Technical AGI Safety & Security
+                </h1>
+                <p className="mt-6 text-lg leading-8 text-gray-600">
+                  Explore Google DeepMind's comprehensive framework for addressing safety and security concerns 
+                  related to Artificial General Intelligence (AGI).
+                </p>
+                <div className="mt-10 flex items-center gap-x-6">
+                  <Link
+                    href="/risk-areas"
+                    className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                  >
+                    Explore Risk Areas
+                  </Link>
+                  <Link href="/core-assumptions" className="text-sm font-semibold leading-6 text-gray-900">
+                    Core Assumptions <span aria-hidden="true">→</span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+
+      {/* Key sections overview */}
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 py-12">
+        <div className="mx-auto max-w-2xl lg:text-center">
+          <h2 className="text-base font-semibold leading-7 text-blue-600">Comprehensive Framework</h2>
+          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            Key Areas of the AGI Safety & Security Approach
+          </p>
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            This interactive guide presents a technical approach to ensuring AGI systems are developed safely 
+            and securely, focusing on four risk areas and corresponding mitigation strategies.
+          </p>
+        </div>
+        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
+          <ConceptCard
+              title="Core Assumptions"
+              description="Review the five fundamental assumptions about AGI development that underpin the safety approach."
+              icon={<FiLayers className="h-7 w-7" />}
+              linkHref="/core-assumptions"
+            />
+            <ConceptCard
+              title="Risk Areas"
+              description="Explore the four key risk areas: misuse, misalignment, mistakes, and structural risks - with a focus on the first two as most critical for severe harm prevention."
+              icon={<FiAlertTriangle className="h-7 w-7" />}
+              linkHref="/risk-areas"
+            />
+            <ConceptCard
+              title="Misuse Mitigation"
+              description="Learn about approaches to prevent malicious actors from accessing and exploiting dangerous AI capabilities."
+              icon={<FiShield className="h-7 w-7" />}
+              linkHref="/misuse"
+            />
+            <ConceptCard
+              title="Misalignment Mitigation"
+              description="Understand strategies to ensure AI systems remain aligned with human values and intentions, even as capabilities advance."
+              icon={<FiTarget className="h-7 w-7" />}
+              linkHref="/misalignment"
+            />
+          </dl>
+        </div>
+      </div>
+
+      {/* Executive summary */}
+      <div className="bg-gray-50 py-16">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl lg:mx-0">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Executive Summary</h2>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+            Artificial General Intelligence (AGI) promises transformative benefits like raising living standards worldwide and accelerating scientific discovery, but also presents significant risks. This approach develops an "anytime" framework to address risks of severe harms, focusing primarily on misuse and misalignment, while acknowledging mistakes and structural risks.
+      </p>
+      <p className="mt-6 text-lg leading-8 text-gray-600">
+        For misuse, the strategy proactively identifies dangerous capabilities and prevents threat actors from accessing them through robust security, access restrictions, monitoring, and model safety mitigations. For misalignment, two lines of defense are outlined: first, training aligned models via amplified oversight and robust training; second, implementing system-level security measures to mitigate harm even from misaligned models.
+      </p>
+      <p className="mt-6 text-lg leading-8 text-gray-600">
+        This approach is informed by key assumptions about AGI development: continuing within the current paradigm, potentially exceeding human capabilities, developing on uncertain timelines, and exhibiting approximately continuous progress. Supporting techniques include interpretability, uncertainty estimation, and safer design patterns for building effective AGI safety cases.
+      </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
