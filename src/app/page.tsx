@@ -16,7 +16,7 @@ export default function HomePage() {
                   An Approach to Technical AGI Safety & Security
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                  Explore Google DeepMind's comprehensive framework for addressing safety and security concerns 
+                  Explore Google DeepMind&apos;s comprehensive framework for addressing safety and security concerns 
                   related to Artificial General Intelligence (AGI).
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
@@ -84,7 +84,7 @@ export default function HomePage() {
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Executive Summary</h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-            Artificial General Intelligence (AGI) promises transformative benefits like raising living standards worldwide and accelerating scientific discovery, but also presents significant risks. This approach develops an "anytime" framework to address risks of severe harms, focusing primarily on misuse and misalignment, while acknowledging mistakes and structural risks.
+            Artificial General Intelligence (AGI) promises transformative benefits like raising living standards worldwide and accelerating scientific discovery, but also presents significant risks. This approach develops an &quot;anytime&quot; framework to address risks of severe harms, focusing primarily on misuse and misalignment, while acknowledging mistakes and structural risks.
       </p>
       <p className="mt-6 text-lg leading-8 text-gray-600">
         For misuse, the strategy proactively identifies dangerous capabilities and prevents threat actors from accessing them through robust security, access restrictions, monitoring, and model safety mitigations. For misalignment, two lines of defense are outlined: first, training aligned models via amplified oversight and robust training; second, implementing system-level security measures to mitigate harm even from misaligned models.

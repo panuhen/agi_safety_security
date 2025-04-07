@@ -17,7 +17,7 @@ export default function MisusePage() {
       <div className="prose prose-blue max-w-none">
         <p className="text-lg text-gray-600">
           <GlossaryTooltip term="Misuse">Misuse</GlossaryTooltip> occurs when a human deliberately uses the AI system to cause harm, 
-          against the developer's wishes. Our approach focuses on preventing bad actors from accessing dangerous capabilities.
+          against the developer&apos;s wishes. Our approach focuses on preventing bad actors from accessing dangerous capabilities.
         </p>
 
         <MisuseApproachVisualization />
@@ -151,7 +151,7 @@ export default function MisusePage() {
                 
                 <ExpandableSection title="Jailbreak Resistance" className="w-full">
                   <p className="text-gray-600">
-                    Researchers have found many ways to circumvent a model's refusal training (jailbreaks), such as:
+                    Researchers have found many ways to circumvent a model&apos;s refusal training (jailbreaks), such as:
                   </p>
                   <ul className="list-disc pl-5 text-gray-600 mt-4 space-y-2">
                     <li>Exploiting role-playing abilities</li>
@@ -255,7 +255,7 @@ export default function MisusePage() {
                     <li>Creating a policy around what intended use-cases should get access</li>
                     <li>Requiring submission of statements of intended use for review</li>
                     <li>Implementing enforcement mechanisms to verify ongoing compliance</li>
-                    <li>Validating user identity and trustworthiness through "know-your-customer" vetting</li>
+                    <li>Validating user identity and trustworthiness through &quot;know-your-customer&quot; vetting</li>
                   </ul>
                 </ExpandableSection>
                 
@@ -294,7 +294,7 @@ export default function MisusePage() {
               <div className="space-y-6">
                 <ExpandableSection title="Identity and Access Control" className="w-full">
                   <p className="text-gray-600">
-                    The first line of defense is to reduce access to "least privilege":
+                    The first line of defense is to reduce access to &quot;least privilege&quot;:
                   </p>
                   <ul className="list-disc pl-5 text-gray-600 mt-4 space-y-2">
                     <li>Only give access to individuals who need it and for only the time needed</li>

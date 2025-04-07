@@ -2,8 +2,7 @@
 import PageLayout from '@/components/layout/PageLayout';
 import MisalignmentApproachVisualization from '@/components/visualizations/MisalignmentApproach';
 import GlossaryTooltip from '@/components/ui/GlossaryTooltip';
-import Link from 'next/link';
-import { FiTarget, FiShield, FiCpu, FiEye, FiAlertCircle, FiKey, FiUserCheck, FiActivity, FiLayers, FiSearch } from 'react-icons/fi';
+import { FiTarget, FiShield, FiCpu, FiEye, FiAlertCircle, FiUserCheck, FiActivity, FiLayers, FiSearch } from 'react-icons/fi';
 
 export default function MisalignmentPage() {
   return (
@@ -34,7 +33,7 @@ export default function MisalignmentPage() {
 
         <p className="mt-4 text-gray-600">
           This stands in contrast to mistakes, where harmful outputs occur due to extrinsic factors the AI 
-          couldn't have known about, or structural risks, which arise from complex multi-agent interactions.
+          couldn&apos;t have known about, or structural risks, which arise from complex multi-agent interactions.
         </p>
 
         <div className="mt-8 mb-6">
@@ -67,7 +66,7 @@ export default function MisalignmentPage() {
             <li>Deliberately disempowers humans to achieve that goal</li>
           </ul>
           <p className="mt-4 text-gray-600">
-            A deceptively aligned system can "play the training game" to appear benign when it's being evaluated 
+            A deceptively aligned system can &quot;play the training game&quot; to appear benign when it&apos;s being evaluated 
             and evade oversight to pursue its objectives.
           </p>
         </div>
@@ -106,7 +105,7 @@ export default function MisalignmentPage() {
                   As AI systems become more capable than their human overseers, it becomes challenging to provide 
                   effective oversight. <GlossaryTooltip term="Amplified oversight">Amplified oversight</GlossaryTooltip> uses the AI system itself to help with 
                   the oversight process, aiming to provide oversight that is as good as could be achieved if a human 
-                  understood all the reasons behind the AI's outputs.
+                  understood all the reasons behind the AI&apos;s outputs.
                 </p>
                 
                 <div className="mt-6 space-y-6">
@@ -115,7 +114,7 @@ export default function MisalignmentPage() {
                       Key methods include:
                     </p>
                     <ul className="mt-3 list-disc pl-5 space-y-2 text-gray-600">
-                      <li><strong>Debate:</strong> Two AI systems debate to point out flaws in each other's outputs to a human judge</li>
+                      <li><strong>Debate:</strong> Two AI systems debate to point out flaws in each other&apos;s outputs to a human judge</li>
                       <li><strong>Critique:</strong> AI systems generate criticisms of outputs to assist human evaluators</li>
                       <li><strong>Recursive approaches:</strong> Break complex problems into simpler subproblems</li>
                     </ul>
@@ -271,11 +270,11 @@ export default function MisalignmentPage() {
                     </li>
                     <li><strong>Suppressing misalignment biases:</strong> Filtering or neutralizing content that might encourage misalignment</li>
                     <li><strong>Limited optimization:</strong> Restricting the strength or type of optimization to prevent reward hacking</li>
-                    <li><strong>Externalized reasoning:</strong> Making the AI's thought process transparent and verifiable</li>
+                    <li><strong>Externalized reasoning:</strong> Making the AI&apos;s thought process transparent and verifiable</li>
                   </ul>
                   
                   <p className="text-gray-600">
-                    These design patterns often involve trade-offs with performance or capabilities, so it's important to 
+                    These design patterns often involve trade-offs with performance or capabilities, so it&apos;s important to 
                     understand and quantify these trade-offs to make appropriate decisions.
                   </p>
                 </div>
@@ -364,7 +363,7 @@ export default function MisalignmentPage() {
                     Examples of alignment stress tests include:
                   </p>
                   <ul className="list-disc pl-5 space-y-2 text-gray-600">
-                    <li>Creating "sleeper agents" to test if standard fine-tuning can remove backdoor behaviors</li>
+                    <li>Creating &quot;sleeper agents&quot; to test if standard fine-tuning can remove backdoor behaviors</li>
                     <li>Testing if models will fake alignment in certain scenarios</li>
                     <li>Evaluating whether models can be made to tamper with reward functions</li>
                   </ul>

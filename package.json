@@ -2,13 +2,13 @@
   "name": "agi-safety-interactive",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "deploy": "npm run build && gh-pages -d out" 
-  },
+"scripts": {
+  "dev": "next dev --turbopack",
+  "build": "next build",
+  "start": "next start",
+  "lint": "next lint",
+  "deploy": "next build && touch out/.nojekyll && gh-pages -d out"
+},
   "dependencies": {
     "framer-motion": "^12.6.3",
     "next": "15.2.4",
@@ -29,5 +29,4 @@
     "tailwindcss": "^4",
     "typescript": "^5"
   }
-  
 }

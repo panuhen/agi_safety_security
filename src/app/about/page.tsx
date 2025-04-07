@@ -1,7 +1,7 @@
 // src/app/about/page.tsx
 import PageLayout from '@/components/layout/PageLayout';
 import GlossaryTooltip from '@/components/ui/GlossaryTooltip';
-import { FiDownload, FiExternalLink, FiCoffee, FiLinkedin } from 'react-icons/fi';
+import { FiDownload } from 'react-icons/fi';
 
 export default function ReportPage() {
   return (
@@ -13,7 +13,7 @@ export default function ReportPage() {
     >
       <div className="prose prose-blue max-w-none">
         <p className="text-lg text-gray-600">
-          This site is based on the Google DeepMind report "An Approach to Technical AGI Safety and Security" published in April 2025. The report outlines a strategic framework for addressing severe risks from <GlossaryTooltip term="AGI">AGI</GlossaryTooltip> while enabling its potential benefits.
+          This site is based on the Google DeepMind report &quot;An Approach to Technical AGI Safety and Security&quot; published in April 2025. The report outlines a strategic framework for addressing severe risks from <GlossaryTooltip term="AGI">AGI</GlossaryTooltip> while enabling its potential benefits.
         </p>
 
         <div className="flex space-x-4 my-6">
@@ -51,7 +51,7 @@ export default function ReportPage() {
           <li><strong>Four Risk Areas</strong>: The authors identify four categories of risks: misuse (where users intentionally cause harm), misalignment (where the AI system knowingly acts against developer intent), mistakes (unintentional harmful outputs), and structural risks (harms from multi-agent dynamics).</li>
           <li><strong>Two Primary Concerns</strong>: The strategy concentrates on misuse and misalignment as the most pressing concerns requiring technical interventions.</li>
           <li><strong>Misuse Mitigation Strategy</strong>: Evaluate models for dangerous capabilities, implement security and deployment safeguards, and test mitigation effectiveness through red-teaming.</li>
-          <li><strong>Misalignment Approach</strong>: Develop "amplified oversight" to help humans supervise increasingly capable AI, create robust training methods, and implement defense-in-depth with monitoring and security techniques.</li>
+          <li><strong>Misalignment Approach</strong>: Develop &quot;amplified oversight&quot; to help humans supervise increasingly capable AI, create robust training methods, and implement defense-in-depth with monitoring and security techniques.</li>
           <li><strong>Research Areas</strong>: The report highlights several enabling technologies including interpretability, uncertainty quantification, and safer design patterns.</li>
           <li><strong>Core Assumptions</strong>: The authors base their approach on assumptions that include the continuation of current AI development paradigms, no inherent ceiling to AI capabilities, uncertain development timelines, the potential for accelerating capability growth, and approximately continuous progress.</li>
         </ul>

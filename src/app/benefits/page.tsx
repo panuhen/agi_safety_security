@@ -1,6 +1,5 @@
 // src/app/benefits/page.tsx
 import PageLayout from '@/components/layout/PageLayout';
-import ExpandableSection from '@/components/ui/ExpandableSection';
 import GlossaryTooltip from '@/components/ui/GlossaryTooltip';
 import { FiTrendingUp, FiBook, FiLayers, FiUsers } from 'react-icons/fi';
 
@@ -14,7 +13,7 @@ export default function BenefitsPage() {
     >
       <div className="prose prose-blue max-w-none">
         <p className="text-lg text-gray-600">
-          While our primary focus is on mitigating risks, it's important to recognize the tremendous 
+          While our primary focus is on mitigating risks, it&apos;s important to recognize the tremendous 
           potential benefits that <GlossaryTooltip term="AGI">AGI</GlossaryTooltip> could bring to humanity. 
           These benefits motivate the development of AGI and underscore the importance of building it safely.
         </p>
@@ -25,7 +24,7 @@ export default function BenefitsPage() {
         <p className="text-gray-600">
           Artificial General Intelligence promises transformative benefits across virtually every domain 
           of human endeavor. Its capability to think, learn, and solve problems across multiple domains 
-          could help address some of humanity's most pressing challenges and unlock new possibilities 
+          could help address some of humanity&apos;s most pressing challenges and unlock new possibilities 
           for human flourishing.
         </p>
         
@@ -94,7 +93,7 @@ export default function BenefitsPage() {
           <li><strong>Transformation scale</strong>: Economic gains comparable to those achieved globally between 1820 and 2010</li>
         </ul>
         <p className="text-gray-600 mt-4">
-          As a "technology of technologies," AGI could enhance innovation across all fields, 
+          As a &quot;technology of technologies,&quot; AGI could enhance innovation across all fields, 
           potentially raising the global standard of living to levels considered respectable in 
           modern developed countries—a transformation comparable to the global economic gains 
           achieved between 1820 and 2010.
@@ -120,7 +119,7 @@ export default function BenefitsPage() {
         
         <h3 className="text-xl font-semibold mt-6 mb-4">Healthcare Advancements</h3>
         <p className="text-gray-600">
-          AGI's potential to transform healthcare includes:
+          AGI&apos;s potential to transform healthcare includes:
         </p>
         <ul className="list-disc pl-5 space-y-2 text-gray-600 mt-4">
           <li><strong>Improved diagnostics</strong>: More accurate and earlier disease detection</li>
@@ -181,7 +180,7 @@ export default function BenefitsPage() {
         <h2 id="lowering-barriers" className="text-2xl font-bold mb-6">Enhancing Information Processing and Lowering Barriers to Innovation</h2>
         <p className="text-gray-600">
           AGI could democratize enhanced information processing capability and access to knowledge 
-          at unprecedented scale, rendering it accessible to vast swathes of the world's population.
+          at unprecedented scale, rendering it accessible to vast swathes of the world&apos;s population.
         </p>
         
         <h3 className="text-xl font-semibold mt-6 mb-4">Democratizing Access</h3>

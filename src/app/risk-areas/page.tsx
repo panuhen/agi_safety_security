@@ -156,8 +156,8 @@ export default function RiskAreasPage() {
               </h3>
               <p className="text-gray-600">
                 Structural risks are harms arising from multi-agent dynamics – involving multiple people, 
-                organizations, or AI systems – which would not have been prevented simply by changing one person's 
-                behaviour, one system's alignment, or one system's safety controls.
+                organizations, or AI systems – which would not have been prevented simply by changing one person&apos;s 
+                behaviour, one system&apos;s alignment, or one system&apos;s safety controls.
               </p>
               <p className="text-gray-600 mt-2">
                 These risks often emerge from complex interactions and may include:

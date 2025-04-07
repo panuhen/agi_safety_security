@@ -1,8 +1,6 @@
 // src/app/safety-cases/page.tsx
 import PageLayout from '@/components/layout/PageLayout';
-import ExpandableSection from '@/components/ui/ExpandableSection';
-import GlossaryTooltip from '@/components/ui/GlossaryTooltip';
-import { FiShield, FiCheckCircle, FiSearch, FiAlertCircle, FiFileText, FiLayers } from 'react-icons/fi';
+import { FiShield, FiCheckCircle, FiSearch, FiAlertCircle } from 'react-icons/fi';
 
 export default function SafetyCasesPage() {
   return (
@@ -23,7 +21,7 @@ export default function SafetyCasesPage() {
         
         <h2 id="what-are-safety-cases" className="text-2xl font-bold mb-6">What Are Safety Cases?</h2>
         <p className="text-gray-600">
-          Safety cases provide a systematic way to argue that a system's risks have been reduced to an acceptable 
+          Safety cases provide a systematic way to argue that a system&apos;s risks have been reduced to an acceptable 
           level. They include both the argument structure (how evidence supports claims about safety) and the 
           evidence itself (test results, design specifications, analysis outcomes, etc.).
         </p>
@@ -87,7 +85,7 @@ export default function SafetyCasesPage() {
         </p>
         <div className="mt-6 space-y-4">
           <p className="text-gray-600">
-            For example, evaluations might test an AI system's ability to:
+            For example, evaluations might test an AI system&apos;s ability to:
           </p>
           <ul className="list-disc pl-5 space-y-2 text-gray-600">
             <li>Provide detailed instructions for harmful activities</li>
@@ -217,7 +215,7 @@ export default function SafetyCasesPage() {
         </p>
         <p className="mt-4 text-gray-600">
           Control evaluations test the robustness of our supervision techniques: if the red team can create 
-          a model that behaves in ways that would cause harm, but that supervision doesn't detect, then 
+          a model that behaves in ways that would cause harm, but that supervision doesn&apos;t detect, then 
           our supervision is insufficient.
         </p>
         
@@ -234,7 +232,7 @@ export default function SafetyCasesPage() {
         </p>
         <ol className="mt-4 list-decimal pl-5 space-y-2 text-gray-600">
           <li>Starting with a specific safety argument or assumption</li>
-          <li>Designing experiments to test this assumption's validity</li>
+          <li>Designing experiments to test this assumption&apos;s validity</li>
           <li>Drawing conclusions based on the experiment results</li>
           <li>Using these insights to improve our alignment approaches</li>
         </ol>

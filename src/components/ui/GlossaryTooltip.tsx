@@ -14,13 +14,14 @@ export default function GlossaryTooltip({ term, children }: GlossaryTooltipProps
   const { terms, highlightedTerm, setHighlightedTerm } = useGlossary();
   const tooltipRef = useRef<HTMLSpanElement>(null);
   
+  // Find the glossary term
   const glossaryTerm = terms.find(t => t.term.toLowerCase() === term.toLowerCase());
   
-  if (!glossaryTerm) {
-    return <>{children}</>;
-  }
-  
+  // Always call hooks at the top level
   useEffect(() => {
+    // Only add event listeners if we have a valid term
+    if (!glossaryTerm) return;
+    
     const handleClickOutside = (event: MouseEvent) => {
       if (tooltipRef.current && !tooltipRef.current.contains(event.target as Node)) {
         setIsVisible(false);
@@ -34,7 +35,12 @@ export default function GlossaryTooltip({ term, children }: GlossaryTooltipProps
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, [highlightedTerm, setHighlightedTerm, term]);
+  }, [highlightedTerm, setHighlightedTerm, term, glossaryTerm]);
+  
+  // If no matching term is found, just render the children as is
+  if (!glossaryTerm) {
+    return <>{children}</>;
+  }
   
   const handleClick = () => {
     setIsVisible(!isVisible);

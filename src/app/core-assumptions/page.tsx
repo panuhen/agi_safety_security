@@ -22,7 +22,7 @@ export default function CoreAssumptionsPage() {
         {/* This H2 should appear in ToC */}
         <h2 id="the-five-core-assumptions" className="text-2xl font-bold mb-6">The Five Core Assumptions</h2>
         <p className="mt-4 text-gray-600">
-          These assumptions help us navigate uncertainty and develop an "anytime" approach to safety that 
+          These assumptions help us navigate uncertainty and develop an &quot;anytime&quot; approach to safety that 
           can be applied whenever needed.
         </p>
 
@@ -78,7 +78,7 @@ export default function CoreAssumptionsPage() {
                 Implications
               </div>
               <p className="text-gray-600">
-                This assumption motivates our focus on an "anytime" approach to AGI safety that can be applied 
+                This assumption motivates our focus on an &quot;anytime&quot; approach to AGI safety that can be applied 
                 at any point. It also highlights the need for oversight signals that can accurately assess 
                 whether a given AI action is good or bad.
               </p>
@@ -109,7 +109,7 @@ export default function CoreAssumptionsPage() {
               </div>
               <p className="text-gray-600">
                 We assume that AI capabilities will not cease to advance once they achieve parity with the most 
-                capable humans. There is no "human ceiling" that sets an upper limit for AI capability.
+                capable humans. There is no &quot;human ceiling&quot; that sets an upper limit for AI capability.
               </p>
               
               <div 
@@ -126,7 +126,7 @@ export default function CoreAssumptionsPage() {
               <ul className="list-disc pl-5 text-gray-600">
                 <li>Chess, where AI systems reached an Elo rating of 3643 in 2024, compared to the highest human rating of 2882</li>
                 <li>Go, which was considered much more difficult than chess, yet was mastered by AlphaGo</li>
-                <li>AlphaFold's superhuman performance in predicting protein structures</li>
+                <li>AlphaFold`&apos;s superhuman performance in predicting protein structures</li>
               </ul>
               <p className="text-gray-600 mt-2">
                 We observe no principled arguments for why AI capability would necessarily stop at human-level,
@@ -188,7 +188,7 @@ export default function CoreAssumptionsPage() {
                 Existing AI forecasts support a broad spectrum of timelines. For instance:
               </p>
               <ul className="list-disc pl-5 text-gray-600">
-                <li>Expert surveys conducted in 2023 estimated a 50% chance of "High-level machine intelligence" by 2047</li>
+                <li>Expert surveys conducted in 2023 estimated a 50% chance of &quot;High-level machine intelligence&quot; by 2047</li>
                 <li>Compute-centric approaches have predicted human-level AI within the next decade</li>
                 <li>Historical forecasting challenges suggest caution in placing too much confidence in any single prediction</li>
               </ul>
@@ -305,7 +305,7 @@ export default function CoreAssumptionsPage() {
               <p className="text-gray-600">
                 Taking an outside view, large discontinuous jumps in highly optimized domains are rare. Empirical
                 evidence suggests that general capabilities (as measured by broad benchmarks) tend not to show large,
-                sudden jumps. While the phenomenon of "emergent abilities" has been documented, most cases can be
+                sudden jumps. While the phenomenon of &quot;emergent abilities&quot; has been documented, most cases can be
                 explained as measurement artifacts, and dramatic gains that would enable severe harm are extremely rare.
               </p>
               
@@ -319,7 +319,7 @@ export default function CoreAssumptionsPage() {
               </div>
               <p className="text-gray-600">
                 This enables us to iteratively and empirically test our approach and detect flawed assumptions as 
-                capabilities improve. Our technical approach doesn't need to be robust to arbitrarily capable AI 
+                capabilities improve. Our technical approach doesn&apos;t need to be robust to arbitrarily capable AI 
                 systems, but can focus on foreseeable capability improvements.
               </p>
             </div>
@@ -331,7 +331,7 @@ export default function CoreAssumptionsPage() {
         {/* This H2 should also appear in ToC */}
         <h2 id="benefits-agi" className="text-2xl font-bold mb-6">Benefits of AGI</h2> 
         <p className="mt-4 text-gray-600">
-          While our focus is on mitigating risks, it's important to acknowledge that AGI has the potential to 
+          While our focus is on mitigating risks, it&apos;s important to acknowledge that AGI has the potential to 
           provide tremendous benefits, including:
         </p>
         

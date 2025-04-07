@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
             <p className="text-sm text-gray-500">
-              Based on "An Approach to Technical AGI Safety and Security" by Google DeepMind, 2025.
+              Based on &quot;An Approach to Technical AGI Safety and Security&quot; by Google DeepMind, 2025.
             </p>
           </div>
           <div className="mt-12 grid grid-cols-3 gap-8 xl:col-span-2 xl:mt-0">
