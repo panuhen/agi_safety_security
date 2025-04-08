@@ -1,6 +1,7 @@
 // src/app/safety-cases/page.tsx
 import PageLayout from '@/components/layout/PageLayout';
 import { FiShield, FiCheckCircle, FiSearch, FiAlertCircle } from 'react-icons/fi';
+import GlossaryTooltip from '@/components/ui/GlossaryTooltip';
 
 export default function SafetyCasesPage() {
   return (
@@ -12,7 +13,7 @@ export default function SafetyCasesPage() {
     >
       <div className="prose prose-blue max-w-none">
         <p className="text-lg text-gray-600">
-          A safety case is a structured argument, supported by a body of evidence, that a system is safe 
+          A <GlossaryTooltip term="Safety case">safety case</GlossaryTooltip> is a structured argument, supported by a body of evidence, that a system is safe 
           for a given application in a given environment. For AGI systems, safety cases are crucial to 
           justify deployment decisions and ensure appropriate risk mitigation.
         </p>

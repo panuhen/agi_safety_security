@@ -145,7 +145,7 @@ export default function MisusePage() {
                   <ul className="list-disc pl-5 text-gray-600 mt-4 space-y-2">
                     <li>Adding instructions to the system prompt</li>
                     <li>Supervised finetuning on demonstrations of harmless responses</li>
-                    <li>Reinforcement learning from human feedback (RLHF) or direct preference optimization (DPO) 
+                    <li><GlossaryTooltip term="RLHF">Reinforcement learning from human feedback (RLHF)</GlossaryTooltip> or direct preference optimization (DPO) 
                     using preference comparisons</li>
                   </ul>
                 </ExpandableSection>
@@ -390,8 +390,8 @@ export default function MisusePage() {
         They help transform individual mitigations into coherent evidence that a system poses acceptable risk.
         </p>
         <p className="text-gray-600 mt-4">
-        Safety cases for misuse typically fall into two categories: &quot;inability&quot; cases (demonstrating the model lacks dangerous capabilities) 
-        and &quot;red-teamed&quot; cases (demonstrating mitigations are robust against sophisticated attacks).  
+        Safety cases for misuse typically fall into two categories: <GlossaryTooltip term="Inability safety case">inability cases</GlossaryTooltip> (demonstrating the model lacks dangerous capabilities) 
+        and <GlossaryTooltip term="Red-teamed safety case">red-teamed cases</GlossaryTooltip> (demonstrating mitigations are robust against sophisticated attacks).  
         </p>
       </div>
             {/* Action Buttons */}

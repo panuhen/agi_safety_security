@@ -55,6 +55,14 @@ const glossaryTerms: GlossaryTerm[] = [
     term: "Safety case",
     definition: "A structured argument, supported by evidence, that a system is safe for a given application in a given environment."
   },
+  {
+    term: "Inability safety case",
+    definition: "A structured argument demonstrating that an AI system lacks the capabilities necessary to cause harm, based on evidence from capability evaluations."
+  },
+  {
+    term: "Red-teamed safety case",
+    definition: "A structured argument showing that an AI system's safety mitigations are robust against potential attacks, based on evidence from comprehensive stress testing."
+  },
 ];
 
 const GlossaryContext = createContext<GlossaryContextType>({
