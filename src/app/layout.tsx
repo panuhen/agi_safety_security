@@ -5,6 +5,7 @@ import './globals.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { GlossaryProvider } from './GlossaryContext';
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -29,6 +30,7 @@ export default function RootLayout({
             <Footer />
           </div>
         </GlossaryProvider>
+        <Analytics />
       </body>
     </html>
   );
