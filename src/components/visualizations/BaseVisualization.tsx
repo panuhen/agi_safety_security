@@ -1,7 +1,7 @@
 // src/components/visualizations/BaseVisualization.tsx
 "use client"
 
-import React, { useState } from 'react';
+import React from 'react';
 
 type BaseVisualizationProps = {
   title: string;
@@ -18,21 +18,9 @@ export default function BaseVisualization({
   children,
   className = '',
 }: BaseVisualizationProps) {
-  const [isFullscreen, setIsFullscreen] = useState(false);
-
-  const toggleFullscreen = () => {
-    setIsFullscreen(!isFullscreen);
-  };
-
   return (
-    <div className={`my-8 ${isFullscreen ? 'fixed inset-0 z-50 bg-white p-4 overflow-auto' : ''} ${className}`}>
+    <div className={`my-8 ${className}`}>
       <div className="relative w-full bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm">
-        <button
-          onClick={toggleFullscreen}
-          className="absolute top-2 right-2 z-10 text-xs text-blue-500 hover:underline"
-        >
-          {isFullscreen ? 'Exit Fullscreen' : 'Fullscreen'}
-        </button>
         <div className="p-4">
           {children}
         </div>
