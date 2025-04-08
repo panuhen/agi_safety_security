@@ -24,24 +24,24 @@ const components: ComponentType[] = [
     id: 'amplified-oversight',
     title: 'Amplified Oversight',
     description: 'Use AI systems to help humans provide effective oversight',
-    icon: <FiUserCheck className="h-6 w-6" />,
-    color: 'bg-blue-100',
+    icon: <FiUserCheck className="h-6 w-6 text-blue-600" />,
+    color: 'bg-blue-50',
     group: 'training',
   },
   {
     id: 'guiding-behavior',
     title: 'Guiding Model Behavior',
     description: 'Use oversight signals to train AI systems to behave well',
-    icon: <FiActivity className="h-6 w-6" />,
-    color: 'bg-blue-100',
+    icon: <FiActivity className="h-6 w-6 text-blue-600" />,
+    color: 'bg-blue-50',
     group: 'training',
   },
   {
     id: 'robust-training',
     title: 'Robust Training',
     description: 'Expand training distribution to address potential failure modes',
-    icon: <FiCpu className="h-6 w-6" />,
-    color: 'bg-blue-100',
+    icon: <FiCpu className="h-6 w-6 text-blue-600" />,
+    color: 'bg-blue-50',
     group: 'training',
   },
   
@@ -50,16 +50,16 @@ const components: ComponentType[] = [
     id: 'monitoring',
     title: 'Monitoring',
     description: 'Detect and respond to suspicious behaviors during deployment',
-    icon: <FiEye className="h-6 w-6" />,
-    color: 'bg-green-100',
+    icon: <FiEye className="h-6 w-6 text-green-600" />,
+    color: 'bg-green-50',
     group: 'inference',
   },
     {
     id: 'access-controls',
     title: 'Access Controls', // Renamed from access-restrictions for consistency if needed elsewhere
     description: 'Limit what resources and tools AI systems can access',
-    icon: <FiTool className="h-6 w-6" />, // Changed icon to FiTool
-    color: 'bg-green-100',
+    icon: <FiTool className="h-6 w-6 text-green-600" />, // Changed icon to FiTool
+    color: 'bg-green-50',
     group: 'inference',
   },
   
@@ -68,24 +68,24 @@ const components: ComponentType[] = [
     id: 'safer-design',
     title: 'Safer Design Patterns',
     description: 'Design choices that make AI systems inherently safer',
-    icon: <FiLayers className="h-6 w-6" />,
-    color: 'bg-purple-100',
+    icon: <FiLayers className="h-6 w-6 text-purple-600" />,
+    color: 'bg-purple-50',
     group: 'enablers',
   },
   {
     id: 'interpretability',
     title: 'Interpretability',
     description: 'Techniques to understand how AI systems work internally',
-    icon: <FiSearch className="h-6 w-6" />,
-    color: 'bg-purple-100',
+    icon: <FiSearch className="h-6 w-6 text-purple-600" />,
+    color: 'bg-purple-50',
     group: 'enablers',
   },
   {
     id: 'uncertainty',
     title: 'Uncertainty',
     description: 'Methods for AI systems to express their uncertainty',
-    icon: <FiAlertCircle className="h-6 w-6" />,
-    color: 'bg-purple-100',
+    icon: <FiAlertCircle className="h-6 w-6 text-purple-600" />,
+    color: 'bg-purple-50',
     group: 'enablers',
   },
 ];
@@ -98,8 +98,8 @@ export default function MisalignmentApproachVisualization() {
   
   return (
     <BaseVisualization
-      title="Overview of our approach to mitigating misalignment"
-      description="Our approach has two lines of defense: training an aligned model and preventing harm from misaligned models."
+      title=" Overview of the described approach to mitigating misalignment"
+      description="The described approach has two lines of defense: training an aligned model and preventing harm from misaligned models."
       figureNumber={3} // Assuming figure number is correct
     >
       <div className="flex flex-col space-y-8 not-prose"> {/* Added not-prose */}

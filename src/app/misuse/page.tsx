@@ -3,7 +3,8 @@ import PageLayout from '@/components/layout/PageLayout';
 import ExpandableSection from '@/components/ui/ExpandableSection';
 import MisuseApproachVisualization from '@/components/visualizations/MisuseApproach';
 import GlossaryTooltip from '@/components/ui/GlossaryTooltip';
-import { FiShield, FiSearch, FiEye, FiUsers, FiLock, FiZap } from 'react-icons/fi';
+import Link from 'next/link';
+import { FiShield, FiAlertTriangle, FiEye, FiUsers, FiLock, FiZap } from 'react-icons/fi';
 
 export default function MisusePage() {
   return (
@@ -17,7 +18,7 @@ export default function MisusePage() {
       <div className="prose prose-blue max-w-none">
         <p className="text-lg text-gray-600">
           <GlossaryTooltip term="Misuse">Misuse</GlossaryTooltip> occurs when a human deliberately uses the AI system to cause harm, 
-          against the developer&apos;s wishes. Our approach focuses on preventing bad actors from accessing dangerous capabilities.
+          against the developer&apos;s wishes. The approach described focuses on preventing bad actors from accessing dangerous capabilities.
         </p>
 
         <MisuseApproachVisualization />
@@ -60,12 +61,12 @@ export default function MisusePage() {
             <div className="p-6 bg-yellow-50">
               <div className="flex items-start">
                 <div className="flex-shrink-0 mt-1">
-                  <FiSearch className="h-6 w-6 text-yellow-600" />
+                  <FiAlertTriangle className="h-6 w-6 text-yellow-600" />
                 </div>
                 <div className="ml-4">
                   <h3 id="risk-assessment" className="text-xl font-semibold text-gray-900 mt-0 mb-4">Capability-Based Risk Assessment</h3>
                   <p className="text-gray-600">
-                    Before implementing costly mitigations, we first assess whether the AI model has capabilities that 
+                    Before implementing costly mitigations, it is first assessed whether the AI model has capabilities that 
                     could enable severe harm.
                   </p>
                 </div>
@@ -128,7 +129,7 @@ export default function MisusePage() {
                 <div className="ml-4">
                   <h3 id="model-mitigations" className="text-xl font-semibold text-gray-900 mt-0 mb-4">Model Deployment Mitigations</h3>
                   <p className="text-gray-600">
-                    When models possess dangerous capabilities, we apply techniques to prevent misuse:
+                    When models possess dangerous capabilities, techniques are applied to prevent misuse:
                   </p>
                 </div>
               </div>
@@ -339,7 +340,7 @@ export default function MisusePage() {
                 <div className="ml-4">
                   <h3 id="red-teaming" className="text-xl font-semibold text-gray-900 mt-0 mb-4">Red-Teaming Mitigations</h3>
                   <p className="text-gray-600">
-                    Red-teaming evaluates whether our mitigations are sufficient by attempting to bypass them.
+                    Red-teaming evaluates whether the described mitigations are sufficient by attempting to bypass them.
                   </p>
                 </div>
               </div>
@@ -370,7 +371,7 @@ export default function MisusePage() {
                     <li>Assess whether the safety case is still adequate, or if additional R&D is needed</li>
                   </ol>
                   <p className="text-gray-600 mt-4">
-                    Since a bad actor might put in much more effort than we do, red teamers are given extra advantages 
+                    Since a bad actor might put in much more effort than is invested in red-teaming, red teamers are given extra advantages 
                     to compensate, such as full knowledge of the mitigations or loosened thresholds.
                   </p>
                 </ExpandableSection>
@@ -383,27 +384,24 @@ export default function MisusePage() {
 
         <h2 id="safety-cases" className="text-2xl font-bold mb-6">Safety Cases</h2>
         <p className="text-gray-600">
-          Our approach enables two types of <GlossaryTooltip term="Safety case">safety cases</GlossaryTooltip>:
+        The mitigations described above are critical components for addressing misuse risks, but they don&apos;t exist in isolation. 
+        To make deployment decisions, a structured way is needed to determine if these mitigations collectively provide sufficient protection against risks. <GlossaryTooltip term="Safety case">Safety cases</GlossaryTooltip> provide 
+        a framework for assessing whether our mitigation strategies are comprehensive enough to justify deployment decisions. 
+        They help transform individual mitigations into coherent evidence that a system poses acceptable risk.
         </p>
-        
-        <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="p-6 border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">Inability</h3>
-            <p className="text-gray-600">
-              The system does not possess the capability to cause harm. This is justified based on the results 
-              of dangerous capability evaluations, and how those capabilities enable risks.
-            </p>
-          </div>
-          
-          <div className="p-6 border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">Red-teamed</h3>
-            <p className="text-gray-600">
-              For models with dangerous capabilities, we run stress tests to understand how robust our mitigations 
-              are against potential attacks. This evidence feeds into an argument that mitigations are sufficient 
-              for reducing risk to adequate levels.
-            </p>
-          </div>
-        </div>
+        <p className="text-gray-600 mt-4">
+        Safety cases for misuse typically fall into two categories: &quot;inability&quot; cases (demonstrating the model lacks dangerous capabilities) 
+        and &quot;red-teamed&quot; cases (demonstrating mitigations are robust against sophisticated attacks).  
+        </p>
+      </div>
+            {/* Action Buttons */}
+            <div className="mt-8 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+        <Link
+          href="/safety-cases"
+          className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 text-center"
+        >
+          Explore Safety Cases
+        </Link>
       </div>
     </PageLayout>
   );

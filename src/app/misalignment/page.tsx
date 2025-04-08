@@ -16,7 +16,7 @@ export default function MisalignmentPage() {
       <div className="prose prose-blue max-w-none">
         <p className="text-lg text-gray-600">
           <GlossaryTooltip term="Misalignment">Misalignment</GlossaryTooltip> occurs when the AI system 
-          knowingly causes harm against the intent of the developers. Our approach has two lines of 
+          knowingly causes harm against the intent of the developers. The approach described has two lines of 
           defense: training an aligned model and defending against potentially misaligned models.
         </p>
 
@@ -75,7 +75,7 @@ export default function MisalignmentPage() {
 
         <h2 id="mitigation-strategy" className="text-2xl font-bold mb-6">Two-Pronged Mitigation Strategy</h2>
         <p className="text-gray-600">
-          Our approach to misalignment has two lines of defense:
+          The approach to misalignment described has two lines of defense:
         </p>
         <ol className="mt-4 list-decimal pl-5 space-y-2 text-gray-600">
           <li>
@@ -138,7 +138,7 @@ export default function MisalignmentPage() {
               <div className="ml-4">
                 <h3 id="guiding-behavior" className="text-xl font-semibold text-gray-900 mt-0 mb-4">Guiding Model Behavior</h3>
                 <p className="text-gray-600">
-                  Once we have oversight signals that distinguish between good and bad behavior, we need to use these 
+                  Once oversight signals are available that distinguish between good and bad behavior, these need to be used 
                   to build an AI system that behaves well. This involves techniques like:
                 </p>
                 
@@ -169,7 +169,7 @@ export default function MisalignmentPage() {
                 <h3 id="robust-training" className="text-xl font-semibold text-gray-900 mt-0 mb-4">Robust Training</h3>
                 <p className="text-gray-600">
                   Even with good oversight, the AI system may behave well during training but poorly in new situations. 
-                  Robust training mitigates these problems by expanding the distribution of inputs on which our AI systems 
+                  Robust training mitigates these problems by expanding the distribution of inputs on which the AI systems 
                   are trained, with a focus on identifying and addressing potential failure modes.
                 </p>
                 
@@ -199,8 +199,8 @@ export default function MisalignmentPage() {
 
         <h2 id="defending-against-misalignment" className="text-2xl font-bold mb-6">Defending Against Misaligned Models</h2>
         <p className="text-gray-600">
-          Even with our best efforts at training aligned models, there remains a risk that an AI system could 
-          become misaligned. Our second line of defense involves techniques to mitigate harm even from misaligned models:
+          Even with the best efforts at training aligned models, there remains a risk that an AI system could 
+          become misaligned. The second line of defense described involves techniques to mitigate harm even from misaligned models:
         </p>
 
         <div className="mt-8 space-y-12">
@@ -212,7 +212,7 @@ export default function MisalignmentPage() {
               <div className="ml-4">
                 <h3 id="monitoring-security" className="text-xl font-semibold text-gray-900 mt-0 mb-4">Monitoring and Security</h3>
                 <p className="text-gray-600">
-                  We can apply principles from computer security to defend against potentially misaligned AI systems. 
+                  Principles can be applied from computer security to defend against potentially misaligned AI systems. 
                   This involves treating the AI system as an untrusted insider, applying techniques like:
                 </p>
                 
@@ -353,8 +353,8 @@ export default function MisalignmentPage() {
               <div className="ml-4">
                 <h3 id="stress-tests" className="text-xl font-semibold text-gray-900 mt-0 mb-4">Alignment Stress Tests</h3>
                 <p className="text-gray-600">
-                  To verify that our alignment approaches work, we conduct stress tests where red teams try to show that 
-                  key assumptions in alignment plans are false. This helps identify vulnerabilities in our approach and 
+                  To verify that the described alignment approaches work, stress tests are conducted where red teams try to show that 
+                  key assumptions in alignment plans are false. This helps identify vulnerabilities in the described approach and 
                   provides evidence about the likelihood of misalignment.
                 </p>
                 
@@ -380,14 +380,14 @@ export default function MisalignmentPage() {
               <div className="ml-4">
                 <h3 id="safety-cases" className="text-xl font-semibold text-gray-900 mt-0 mb-4">Safety Cases</h3>
                 <p className="text-gray-600">
-                  Eventually, we aim to develop structured arguments that an AI system is not egregiously misaligned. 
+                  Eventually, the aim is to develop structured arguments that an AI system is not egregiously misaligned. 
                   Current approaches include:
                 </p>
                 
                 <div className="mt-6 space-y-6">
                   <ul className="list-disc pl-5 space-y-2 text-gray-600">
                     <li><strong>Inability:</strong> Demonstrating the AI lacks capabilities to cause severe harm</li>
-                    <li><strong>Control:</strong> Showing we can detect and prevent harmful actions during deployment</li>
+                    <li><strong>Control:</strong> Showing that harmful actions can be detected and prevented during deployment</li>
                   </ul>
                   
                   <p className="text-gray-600 mt-4">

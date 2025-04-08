@@ -71,7 +71,7 @@ export default function Footer() {
         </div>
         <div className="mt-12 border-t border-gray-200 pt-8">
           <p className="text-base text-gray-400 xl:text-center">
-            &copy; {new Date().getFullYear()} Interactive AGI Safety & Security Guide. This is an educational resource.
+            &copy; {new Date().getFullYear()} AGI Safety & Security Guide.
           </p>
         </div>
       </div>

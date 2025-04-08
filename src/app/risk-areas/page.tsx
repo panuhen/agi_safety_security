@@ -16,7 +16,7 @@ export default function RiskAreasPage() {
       <section className="prose prose-blue max-w-none">
         <p className="text-lg text-gray-600">
           When addressing safety and security, it is helpful to identify broad groups of pathways to harm 
-          that can be addressed through similar mitigation strategies. We define areas based on abstract 
+          that can be addressed through similar mitigation strategies. The report defines areas based on abstract 
           structural features rather than concrete risk domains.
         </p>
 
@@ -86,7 +86,7 @@ export default function RiskAreasPage() {
               </p>
               <p className="text-gray-600">
                 Alignment is particularly challenging as AI systems become more capable than their human overseers, as it becomes harder to determine whether the AI is actually 
-                pursuing the goals we intend or merely appearing to do so.
+                pursuing the goals the developers intend or merely appearing to do so.
               </p>
               <div className="mt-4">
                 <Link
@@ -132,7 +132,7 @@ export default function RiskAreasPage() {
               </p>
               <ul className="list-disc pl-6 text-gray-600 mt-2">
                 <li>AI-generated entertainment and companions distorting genuine relationships</li>
-                <li>AI systems undermining human sense of achievement by doing more and more of our work</li>
+                <li>AI systems undermining human sense of achievement by doing more and more of human work</li>
                 <li>Degradation of information quality as AI-generated content becomes widespread</li>
                 <li>Gradual loss of human control over political and economic decision-making</li>
                 <li>Challenges to democratic processes through misinformation or surveillance</li>
@@ -164,7 +164,7 @@ export default function RiskAreasPage() {
               </p>
               <ul className="list-disc pl-6 text-gray-600 mt-2">
                 <li>AI-generated entertainment and companions distorting genuine relationships</li>
-                <li>AI systems undermining human sense of achievement by doing more and more of our work</li>
+                <li>AI systems undermining human sense of achievement by doing more and more of human work</li>
                 <li>Degradation of information quality as AI-generated content becomes widespread</li>
                 <li>Gradual loss of human control over political and economic decision-making</li>
                 <li>Challenges to democratic processes through misinformation or surveillance</li>
@@ -177,16 +177,17 @@ export default function RiskAreasPage() {
           </div>
         </div>
 
-        {/* Our Focus Section */}
+        {/* Report Focus Section */}
         <div className="my-12 border-t border-gray-100"></div>
 
-        <h2 id="our-focus" className="text-2xl font-bold mb-6">
-          Our Focus
+        {/* Updated id and heading text */}
+        <h2 id="report-focus" className="text-2xl font-bold mb-6">
+          Focus of the Report 
         </h2>
         <p className="text-gray-600">
-          Our strategy focuses primarily on <GlossaryTooltip term="misuse">misuse</GlossaryTooltip> and <GlossaryTooltip term="misalignment">
+          The report&apos;s strategy focuses primarily on <GlossaryTooltip term="misuse">misuse</GlossaryTooltip> and <GlossaryTooltip term="misalignment">
           misalignment</GlossaryTooltip>, as these present the most significant 
-          and addressable risks of severe harm. Mistakes are better addressed through standard safety practices, 
+          and addressable risks of severe harm identified by the authors. Mistakes are considered better addressed through standard safety practices, 
           while structural risks require broader societal responses.
         </p>
 
@@ -195,8 +196,8 @@ export default function RiskAreasPage() {
           Approach to Misuse
         </h3>
         <p className="text-gray-600">
-          For misuse, our strategy aims to prevent bad actors from accessing dangerous capabilities through robust security, 
-          access restrictions, monitoring, and model safety mitigations. We focus on identifying when models have 
+          For misuse, the strategy outlined in the report aims to prevent bad actors from accessing dangerous capabilities through robust security, 
+          access restrictions, monitoring, and model safety mitigations. The report focuses on identifying when models have 
           dangerous capabilities and implementing appropriate safeguards.
         </p>
 
@@ -205,8 +206,8 @@ export default function RiskAreasPage() {
           Approach to Misalignment
         </h3>
         <p className="text-gray-600">
-          For misalignment, we outline two lines of defense: model-level mitigations such as amplified oversight and robust 
-          training, and system-level security measures such as monitoring and access control. We also leverage techniques 
+          For misalignment, the report outlines two lines of defense: model-level mitigations such as amplified oversight and robust 
+          training, and system-level security measures such as monitoring and access control. The report also leverages techniques 
           from interpretability and uncertainty estimation to enhance these mitigations.
         </p>
 

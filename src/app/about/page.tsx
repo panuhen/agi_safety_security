@@ -40,9 +40,9 @@ export default function ReportPage() {
 
         <div className="my-8 border-t border-gray-100"></div>
         
-        <h2 id="executive-summary" className="text-2xl font-bold mb-6">Executive Summary</h2>
+        <h2 id="executive-summary" className="text-2xl font-bold mb-6">Report Context</h2>
         <p className="text-gray-600">
-          This comprehensive report presents a strategic framework for addressing severe risks from Artificial General Intelligence (AGI). The paper focuses on technical approaches to ensure safety and security as AI systems become increasingly powerful.
+          This comprehensive report presents a strategic framework for addressing severe risks from AGI. The paper focuses on technical approaches to ensure safety and security as AI systems become increasingly powerful.
         </p>
         
         <h3 className="text-xl font-semibold mt-6 mb-4">Key Highlights</h3>
@@ -74,7 +74,7 @@ export default function ReportPage() {
         
         <div className="my-8 border-t border-gray-100"></div>
         
-        <h2 id="contact" className="text-2xl font-bold mb-6">Contact & Support</h2>
+        <h2 id="contact" className="text-2xl font-bold mb-6">Contact</h2>
         <p className="text-gray-600">
   If you have any questions or feedback about this resource, please feel free to{' '}
   <a 
@@ -89,22 +89,7 @@ export default function ReportPage() {
 </p>
         
         <div className="flex flex-col md:flex-row gap-6 my-6">
-
-          
-          {/*<a 
-            href="https://www.buymeacoffee.com/yourusername" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-yellow-600 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
-          >
-            <FiCoffee className="-ml-1 mr-2 h-5 w-5" />
-            Buy me a coffee
-          </a>*/}
         </div>
-         {/*
-        <p className="text-gray-600 text-sm mt-4">
-          Contributions through "Buy me a coffee" help cover domain and hosting costs for this educational resource. Thank you for your support!
-        </p>*/}
       </div>
     </PageLayout>
   );

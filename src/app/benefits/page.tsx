@@ -13,7 +13,7 @@ export default function BenefitsPage() {
     >
       <div className="prose prose-blue max-w-none">
         <p className="text-lg text-gray-600">
-          While our primary focus is on mitigating risks, it&apos;s important to recognize the tremendous 
+          While the primary focus is on mitigating risks, it&apos;s important to recognize the tremendous 
           potential benefits that <GlossaryTooltip term="AGI">AGI</GlossaryTooltip> could bring to humanity. 
           These benefits motivate the development of AGI and underscore the importance of building it safely.
         </p>
@@ -88,9 +88,9 @@ export default function BenefitsPage() {
         economic growth. Key impacts include:
         </p>
         <ul className="list-disc pl-5 space-y-2 text-gray-600 mt-4">
-          <li><strong>High ROI on innovation</strong>: Research suggests social returns of at least $4 for every $1 spent, potentially over $20 when accounting for broader factors</li>
+          <li><strong>High ROI on innovation</strong>: Research suggests social returns of at least $4 for every $1 spent on innovation, potentially rising to over $20 when accounting for broader factors</li>
           <li><strong>Global prosperity</strong>: Potential to raise the global standard of living to levels considered respectable in modern developed countries</li>
-          <li><strong>Transformation scale</strong>: Economic gains comparable to those achieved globally between 1820 and 2010</li>
+          <li><strong>Transformation scale</strong>: A tenfold increase in global GDP (comparable to the economic growth achieved between 1820-2010) would represent approximately $13,500 trillion in economic value when discounted at 5%</li>
         </ul>
         <p className="text-gray-600 mt-4">
           As a &quot;technology of technologies,&quot; AGI could enhance innovation across all fields, 
@@ -215,16 +215,15 @@ export default function BenefitsPage() {
         <p className="text-gray-600">
           The pursuit of AGI is motivated by these important benefits—the ability to deploy intelligence 
           at scale will allow society to devote new resources to many domains and problems crucial to 
-          the betterment of humankind.
+          the betterment of humankind. However, the benefits of AGI can only be fully realized if systems are developed safely and responsibly. 
         </p>
-        <p className="text-gray-600">
-          However, it is crucial to balance these benefits with appropriate risk mitigation. Our 
-          technical safety approaches aim to ensure that we can access these benefits while effectively 
-          addressing safety concerns. Many dangerous capabilities are dual-use, enabling both benefits 
-          and potential harms. Our goal is to distinguish between these cases and block only the 
-          harmful applications.
-        </p>
-        <p className="text-gray-600">
+        <ul className="list-disc pl-5 space-y-2 text-gray-600 mt-4">
+          <li><strong>Dual-use capabilities</strong>: Many of AGI&apos;s most beneficial capabilities (like scientific discovery or systems optimization) could also be misused. The misuse prevention approaches outlined in this framework aim to block harmful applications while enabling beneficial ones.</li>
+          <li><strong>Sustainable progress</strong>: By ensuring AGI systems remain aligned with human values and intentions, the alignment approaches in this framework help ensure that benefits accumulate over time rather than being undermined by unintended consequences.</li>
+          <li><strong>Maintaining human agency</strong>: The safety framework&apos;s emphasis on human oversight and control helps ensure that AGI enhances human capabilities and decision-making rather than diminishing human agency and control.</li>
+          <li><strong>Enabling broader deployment</strong>: Strong safety guarantees make it possible to deploy AGI more widely and in more domains, maximizing potential benefits while managing risks.</li>
+        </ul>
+        <p className="text-gray-600 mt-4">
           By developing robust safety measures alongside advancing capabilities, we can work toward 
           a future where AGI enhances human flourishing without introducing unacceptable risks.
         </p>

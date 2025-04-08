@@ -63,7 +63,7 @@ export default function RiskAreasVisualization() {
     // Assuming BaseVisualization correctly renders its title/description/figureNumber
     <BaseVisualization
       title="Overview of risk areas" 
-      description="We group risks based on factors that drive differences in mitigation approaches."
+      description="Risks grouped based on factors that drive differences in mitigation approaches."
       figureNumber={1}
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 py-4 not-prose"> {/* Added not-prose */}

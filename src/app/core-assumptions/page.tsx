@@ -13,8 +13,7 @@ export default function CoreAssumptionsPage() {
     >
       <div className="prose prose-blue max-w-none">
         <p className="text-lg text-gray-600">
-          Our approach to technical safety is underpinned by five core assumptions about the development of 
-          <GlossaryTooltip term="AGI">Artificial General Intelligence (AGI)</GlossaryTooltip>. These assumptions inform our strategies for mitigating risks.
+          The approach to technical safety described in the report is underpinned by five core assumptions about the development of <GlossaryTooltip term="AGI">AGI</GlossaryTooltip>. These assumptions inform the report&apos;s strategies for mitigating risks.
         </p>
         
         <div className="my-12 border-t border-gray-100"></div>
@@ -22,7 +21,7 @@ export default function CoreAssumptionsPage() {
         {/* This H2 should appear in ToC */}
         <h2 id="the-five-core-assumptions" className="text-2xl font-bold mb-6">The Five Core Assumptions</h2>
         <p className="mt-4 text-gray-600">
-          These assumptions help us navigate uncertainty and develop an &quot;anytime&quot; approach to safety that 
+          These assumptions help navigate uncertainty and develop an &quot;anytime&quot; approach to safety that 
           can be applied whenever needed.
         </p>
 
@@ -49,7 +48,7 @@ export default function CoreAssumptionsPage() {
                 What this means
               </div>
               <p className="text-gray-600">
-                We assume that frontier AI systems will continue to be developed within the current paradigm 
+                The report assumes that frontier AI systems will continue to be developed within the current paradigm 
                 for the foreseeable future. This paradigm is characterized by scaling computation and data, 
                 learning and search as central mechanisms, and algorithmic innovations for efficiency.
               </p>
@@ -78,7 +77,7 @@ export default function CoreAssumptionsPage() {
                 Implications
               </div>
               <p className="text-gray-600">
-                This assumption motivates our focus on an &quot;anytime&quot; approach to AGI safety that can be applied 
+                This assumption motivates the report&apos;s focus on an &quot;anytime&quot; approach to AGI safety that can be applied 
                 at any point. It also highlights the need for oversight signals that can accurately assess 
                 whether a given AI action is good or bad.
               </p>
@@ -94,7 +93,7 @@ export default function CoreAssumptionsPage() {
             id="assumption-2-no-ceiling" // Added ID
             className="text-xl font-semibold text-gray-900 mb-4 pt-6" 
           >
-             2. No Human Ceiling for AI Capability
+            2. No Human Ceiling for AI Capability
           </h3>
            <div className="p-6 border border-gray-200 rounded-lg shadow-sm bg-white mt-[-1rem]">
             <div className="mt-4 space-y-4">
@@ -108,7 +107,7 @@ export default function CoreAssumptionsPage() {
                 What this means
               </div>
               <p className="text-gray-600">
-                We assume that AI capabilities will not cease to advance once they achieve parity with the most 
+                The report assumes that AI capabilities will not cease to advance once they achieve parity with the most 
                 capable humans. There is no &quot;human ceiling&quot; that sets an upper limit for AI capability.
               </p>
               
@@ -126,10 +125,10 @@ export default function CoreAssumptionsPage() {
               <ul className="list-disc pl-5 text-gray-600">
                 <li>Chess, where AI systems reached an Elo rating of 3643 in 2024, compared to the highest human rating of 2882</li>
                 <li>Go, which was considered much more difficult than chess, yet was mastered by AlphaGo</li>
-                <li>AlphaFold`&apos;s superhuman performance in predicting protein structures</li>
+                <li>AlphaFold&apos;s superhuman performance in predicting protein structures</li>
               </ul>
               <p className="text-gray-600 mt-2">
-                We observe no principled arguments for why AI capability would necessarily stop at human-level,
+                The authors observe no principled arguments for why AI capability would necessarily stop at human-level,
                 and many examples suggest that AI can use fundamentally different approaches than humans.
               </p>
               
@@ -142,7 +141,7 @@ export default function CoreAssumptionsPage() {
                 Implications
               </div>
               <p className="text-gray-600">
-                Our safety approach must leverage new AI capabilities as they become available. Initially, this will 
+                The safety approach described must leverage new AI capabilities as they become available. Initially, this will 
                 involve augmenting human work with AI assistance, but eventually most cognitive labor relevant to 
                 AI safety may need to be performed by AI to keep pace with advancing capabilities.
               </p>
@@ -171,7 +170,7 @@ export default function CoreAssumptionsPage() {
                 What this means
               </div>
               <p className="text-gray-600">
-                The timeline for the development of powerful AI systems remains highly uncertain. We consider a 
+                The timeline for the development of powerful AI systems remains highly uncertain. The report considers a 
                 broad range of timelines to be plausible, including relatively short timelines where Exceptional 
                 AGI (Level 4) might be developed before the end of the current decade.
               </p>
@@ -202,7 +201,7 @@ export default function CoreAssumptionsPage() {
                 Implications
               </div>
               <p className="text-gray-600">
-                Given this uncertainty, we prioritize safety approaches that can be integrated into current frontier 
+                Given this uncertainty, the report prioritizes safety approaches that can be integrated into current frontier 
                 AI development and applied whenever necessary, rather than more foundational explorations that might 
                 take many years to bear fruit.
               </p>
@@ -217,7 +216,7 @@ export default function CoreAssumptionsPage() {
             id="assumption-4-acceleration" // Added ID
             className="text-xl font-semibold text-gray-900 mb-4 pt-6" 
           >
-             4. Potential for Accelerating Improvement
+            4. Potential for Accelerating Improvement
           </h3>
           <div className="p-6 border border-gray-200 rounded-lg shadow-sm bg-white mt-[-1rem]">
              <div className="mt-4 space-y-4">
@@ -231,8 +230,8 @@ export default function CoreAssumptionsPage() {
                 What this means
               </div>
               <p className="text-gray-600">
-                We assume that as AI systems automate scientific research and development, we could enter a phase 
-                of accelerating growth. Initial automation of R&D would enable the development of increasingly capable 
+                The report assumes that as AI systems automate scientific research and development, an acceleration phase could be entered 
+                where growth becomes faster. Initial automation of R&D would enable the development of increasingly capable 
                 AI research systems, creating a positive feedback loop.
               </p>
               
@@ -246,9 +245,9 @@ export default function CoreAssumptionsPage() {
               </div>
               <p className="text-gray-600">
                 The economics literature supports a diversity of perspectives on accelerating growth, including some that
-                predict extremely rapid growth. Erdil et al. (2024) estimate returns to software R&D could be sufficient to
-                produce hyperbolic growth, though the evidence is not conclusive. AI researcher surveys show substantial 
-                support for the possibility of rapidly accelerating growth.
+                predict extremely rapid growth. It has been estimated that returns to software R&D could be sufficient to
+                produce hyperbolic growth, though the evidence is not conclusive.  The possibility of rapidly accelerating
+                growth also finds substantial support among AI researchers.
               </p>
               
               <div 
@@ -260,9 +259,9 @@ export default function CoreAssumptionsPage() {
                 Implications
               </div>
               <p className="text-gray-600">
-                Such acceleration could drastically increase the pace of progress, giving us very little calendar time 
-                to notice and react to issues. Our safety approach must also be accelerated through AI assistance to 
-                ensure we retain the ability to address novel risks as they arise.
+                Such acceleration could drastically increase the pace of progress, leaving very little calendar time 
+                to notice and react to issues. The safety approach described must also be accelerated through AI assistance to 
+                ensure developers retain the ability to address novel risks as they arise.
               </p>
             </div>
           </div>
@@ -289,8 +288,8 @@ export default function CoreAssumptionsPage() {
                 What this means
               </div>
               <p className="text-gray-600">
-                We assume there will not be large discontinuous jumps in general AI capabilities given continuous 
-                increases in the inputs to those capabilities (compute and R&D effort). We do not make any such 
+                The report assumes there will not be large discontinuous jumps in general AI capabilities given continuous 
+                increases in the inputs to those capabilities (compute and R&D effort). The report does not make any such 
                 assumption about the rate of AI progress with respect to calendar time.
               </p>
               
@@ -318,8 +317,8 @@ export default function CoreAssumptionsPage() {
                 Implications
               </div>
               <p className="text-gray-600">
-                This enables us to iteratively and empirically test our approach and detect flawed assumptions as 
-                capabilities improve. Our technical approach doesn&apos;t need to be robust to arbitrarily capable AI 
+                This enables developers to iteratively and empirically test the approach and detect flawed assumptions as 
+                capabilities improve. The technical approach described doesn&apos;t need to be robust to arbitrarily capable AI 
                 systems, but can focus on foreseeable capability improvements.
               </p>
             </div>
@@ -331,7 +330,7 @@ export default function CoreAssumptionsPage() {
         {/* This H2 should also appear in ToC */}
         <h2 id="benefits-agi" className="text-2xl font-bold mb-6">Benefits of AGI</h2> 
         <p className="mt-4 text-gray-600">
-          While our focus is on mitigating risks, it&apos;s important to acknowledge that AGI has the potential to 
+          While the report&apos;s focus is on mitigating risks, it&apos;s important to acknowledge that AGI has the potential to 
           provide tremendous benefits, including:
         </p>
         
@@ -351,7 +350,7 @@ export default function CoreAssumptionsPage() {
         </ul>
         
         <p className="mt-4 text-gray-600">
-          Our goal is to access these benefits while effectively addressing safety concerns.
+          The report&apos;s goal is to access these benefits while effectively addressing safety concerns.
         </p>
         
         <div className="mt-8 flex flex-wrap gap-4 not-prose"> 

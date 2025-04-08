@@ -84,13 +84,13 @@ export default function HomePage() {
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Executive Summary</h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-            Artificial General Intelligence (AGI) promises transformative benefits like raising living standards worldwide and accelerating scientific discovery, but also presents significant risks. This approach develops an &quot;anytime&quot; framework to address risks of severe harms, focusing primarily on misuse and misalignment, while acknowledging mistakes and structural risks.
+            Artificial General Intelligence (AGI) refers to highly autonomous systems that outperform humans at most economically valuable work and could match or exceed human-level performance across a wide range of tasks. AGI promises transformative benefits like raising living standards worldwide and accelerating scientific discovery, but also presents significant risks. The Google DeepMind report presents an &quot;anytime&quot; framework, meaning one that can be implemented at any stage,  to address risks of severe harms from AGI, focusing primarily on misuse and misalignment, while acknowledging mistakes and structural risks.
       </p>
       <p className="mt-6 text-lg leading-8 text-gray-600">
         For misuse, the strategy proactively identifies dangerous capabilities and prevents threat actors from accessing them through robust security, access restrictions, monitoring, and model safety mitigations. For misalignment, two lines of defense are outlined: first, training aligned models via amplified oversight and robust training; second, implementing system-level security measures to mitigate harm even from misaligned models.
       </p>
       <p className="mt-6 text-lg leading-8 text-gray-600">
-        This approach is informed by key assumptions about AGI development: continuing within the current paradigm, potentially exceeding human capabilities, developing on uncertain timelines, and exhibiting approximately continuous progress. Supporting techniques include interpretability, uncertainty estimation, and safer design patterns for building effective AGI safety cases.
+      The report&apos;s approach is informed by key assumptions about AGI development: continuing within the current paradigm, potentially exceeding human capabilities, developing on uncertain timelines, and exhibiting approximately continuous progress. Supporting techniques include interpretability, uncertainty estimation, and safer design patterns for building effective AGI safety cases.
       </p>
           </div>
         </div>

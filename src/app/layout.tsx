@@ -10,7 +10,8 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'AGI Safety & Security - Interactive Guide',
-  description: 'An interactive exploration of approaches to technical AGI safety and security',
+  description: 'An interactive exploration of approaches to technical AGI safety and security, covering misuse, misalignment, and safety cases',
+  keywords: 'AGI safety, AGI security, artificial general intelligence, misalignment, misuse, safety cases',
 };
 
 export default function RootLayout({

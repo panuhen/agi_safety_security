@@ -18,7 +18,7 @@ const components: ComponentType[] = [
     id: 'dangerous-capability',
     title: 'Dangerous Capability Evaluations',
     description: 'Assess whether the model has capabilities that could enable severe harm',
-    icon: <FiAlertTriangle className="h-6 w-6" />,
+    icon: <FiAlertTriangle className="h-6 w-6 text-yellow-600" />,
     color: 'bg-yellow-50',
     group: 'evaluation',
   },
@@ -26,8 +26,8 @@ const components: ComponentType[] = [
     id: 'red-teaming', // Moved red-teaming here to match evaluation group in layout
     title: 'Red-Teaming',
     description: 'Evaluate the sufficiency of mitigations by attempting to bypass them using various testing methods',
-    icon: <FiZap className="h-6 w-6" />,
-    color: 'bg-red-100',
+    icon: <FiZap className="h-6 w-6 text-red-600" />,
+    color: 'bg-red-50',
     group: 'evaluation',
   },
   {
@@ -35,39 +35,39 @@ const components: ComponentType[] = [
     title: 'Safety Training',
     description: 'Teach models to refuse harmful requests through post-training',
     icon: <FiCheck className="h-6 w-6" />,
-    color: 'bg-green-100',
+    color: 'bg-green-50',
     group: 'training',
   },
   {
     id: 'capability-suppression',
     title: 'Capability Suppression',
     description: 'Remove or suppress dangerous capabilities from the model',
-    icon: <FiShield className="h-6 w-6" />,
-    color: 'bg-green-100',
+    icon: <FiShield className="h-6 w-6 text-green-600" />,
+    color: 'bg-green-50',
     group: 'training',
   },
   {
     id: 'monitoring',
     title: 'Monitoring',
     description: 'Detect and respond to attempts to access dangerous capabilities',
-    icon: <FiEye className="h-6 w-6" />,
-    color: 'bg-blue-100',
+    icon: <FiEye className="h-6 w-6 text-blue-600" />,
+    color: 'bg-blue-50',
     group: 'deployment',
   },
   {
     id: 'access-restrictions',
     title: 'Access Restrictions',
     description: 'Limit access to models with dangerous capabilities to vetted users and use cases',
-    icon: <FiUsers className="h-6 w-6" />,
-    color: 'bg-blue-100',
+    icon: <FiUsers className="h-6 w-6 text-blue-600" />,
+    color: 'bg-blue-50',
     group: 'deployment',
   },
   {
     id: 'security',
     title: 'Security',
     description: 'Prevent theft of model weights through robust security measures',
-    icon: <FiLock className="h-6 w-6" />,
-    color: 'bg-purple-100',
+    icon: <FiLock className="h-6 w-6 text-purple-600" />,
+    color: 'bg-purple-50',
     group: 'security',
   },
 ];
@@ -80,8 +80,8 @@ export default function MisuseApproachVisualization() {
   
   return (
     <BaseVisualization
-      title="Overview of our approach to mitigating misuse"
-      description="We aim to block bad actors' access to dangerous capabilities through various layers of protection."
+      title="Overview of the described approach to mitigating misuse"
+      description="The approach aims to block bad actors' access to dangerous capabilities through various layers of protection."
       figureNumber={2}
     >
       <div className="flex flex-col space-y-8 not-prose"> {/* Added not-prose */}
